@@ -13,7 +13,7 @@ const images = [
 const movies = [sample, sample, sample, sample, sample, sample, sample];
 const App = () => {
     return (
-        <MovieDetailsPage movie={sample} images={images} />
+        <MovieDetailsPage movies={movies} images={images} countries = {movies.production_countries} />
         );
   };
 
