@@ -32,6 +32,7 @@ const MoviesContextProvider = (props) => {
       newPlaylist.push(movie.id);
     }
     setPlaylist(newPlaylist);
+    console.log(newPlaylist); //array with movie ids
   };
 
  return (
@@ -41,7 +42,7 @@ const MoviesContextProvider = (props) => {
         addToFavourites,
         removeFromFavourites,
         addReview,
-        addToPlaylist
+        addToPlaylist,
       }}
     >
       {props.children}
