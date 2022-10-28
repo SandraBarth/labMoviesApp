@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 import Avatar from '@mui/material/Avatar';
 import { MoviesContext } from "../../contexts/moviesContext";
 
-export default function MovieCard({ movie }) {
+export default function MovieCard({ movie, action}) {
   const { favourites, addToFavourites } = useContext(MoviesContext);
  
    if (favourites.find((id) => id === movie.id)) {
@@ -70,16 +70,20 @@ export default function MovieCard({ movie }) {
           </Grid>
         </Grid>
       </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favourites" onClick={handleAddToFavourite}>
+      <CardActions> 
+      <IconButton aria-label="add to favourites" onClick={action(movie)}>
           <FavoriteIcon color="primary" fontSize="large" />
         </IconButton>
         <Link to={`/movies/${movie.id}`}>
           <Button variant="outlined" size="medium" color="primary">
             More Info ...
           </Button>
-        </Link>
+        </Link>  
       </CardActions>
     </Card>
   );
 }
+
+//movie={/movie/${movie.id}}
+//stopped here The add to favourites feature is now working on the Home page; however, the Favorites page is broken (again!). To fix it, in pages/favouriteMoviesPage.js, update the code, as follows:
+

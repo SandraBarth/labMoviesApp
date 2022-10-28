@@ -28,7 +28,7 @@ const App = () => {
       <BrowserRouter>
       <SiteHeader />      {/* New Header  */}
       <MoviesContextProvider>
-          <Routes>
+      <Routes>
         <Route direct path="/movies/favourites" element={<FavouriteMoviesPage />} />
         <Route path="/movies/:id" element={<MovieDetailsPage />} />
         <Route path="/" element={<HomePage />} />
