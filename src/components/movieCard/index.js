@@ -70,16 +70,10 @@ export default function MovieCard({ movie, action}) {
           </Grid>
         </Grid>
       </CardContent>
-      <CardActions> 
-      <IconButton aria-label="add to favourites" onClick={action(movie)}>
-          <FavoriteIcon color="primary" fontSize="large" />
-        </IconButton>
-        <Link to={`/movies/${movie.id}`}>
-          <Button variant="outlined" size="medium" color="primary">
-            More Info ...
-          </Button>
-        </Link>  
-      </CardActions>
+       {action(movie)} 
+       <Link to={`/movies/${movie.id}`}>
+     More Info ...
+     </Link>
     </Card>
   );
 }
