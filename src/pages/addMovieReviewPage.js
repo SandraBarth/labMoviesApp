@@ -6,8 +6,8 @@ import { useQuery } from "react-query";
 import { getMovie } from "../api/tmdb-api";
 import Spinner from "../components/spinner";
 
-const AddMovieReviewPage = (props) => {
-  const location = useLocation()
+const WriteReviewPage = (props) => {
+  const location = useLocation(); 
   const { movieId } = location.state;
   const { data: movie, error, isLoading, isError } = useQuery(
     ["movie", { id: movieId }],
@@ -28,4 +28,4 @@ const AddMovieReviewPage = (props) => {
   );
 };
 
-export default AddMovieReviewPage;
+export default WriteReviewPage;
