@@ -36,7 +36,7 @@ export default function ActorCard(props) {
       />
       <CardContent>
         <Typography variant="h5" component="p">
-            {""}{" "}
+            {"Popularity: "} {actors.popularity}{" "}
           </Typography>
       </CardContent>
       

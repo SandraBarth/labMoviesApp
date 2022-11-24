@@ -27,9 +27,7 @@ const ActorsPage = (props) => {
     <PageTemplate
       title="Discover Actors"
       actors={actors}
-     /* action={(actor) => {
-        return <AddToFavouritesIcon movie={movie} />
-      }}*/
+   
     />
 );
 };
