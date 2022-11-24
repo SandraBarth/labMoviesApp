@@ -25,7 +25,7 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
   return (
     <>
       <Typography variant="h5" component="h3">
-        Overview
+        {actor.name}
       </Typography>
 
       <Typography variant="h6" component="p">
@@ -37,9 +37,9 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
         sx={root}
       >
         <li>
-          <Chip label="Genres" sx={chip} color="primary" />
+          <Chip label="Biography" sx={chip} color="primary" />
         </li>
-        
+        <li>{actor.biography} </li>
       </Paper>
       <Paper component="ul" sx={root}>
         <Chip
@@ -54,8 +54,11 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
         sx={root}
       >
         <li>
-          <Chip label="Production Countries" sx={chip} color="primary" />
+          <Chip label="Birthday" sx={chip} color="primary" />
         </li>
+        <li>
+          {actor.birthday}
+          </li>
     
       </Paper>
       <Fab
