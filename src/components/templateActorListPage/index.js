@@ -3,7 +3,7 @@ import Header from "../headerActorLsit";
 import ActorList from "../actorList";
 import Grid from "@mui/material/Grid";
 
-function ActorListPageTemplate({ actors, title }) {
+function ActorListPageTemplate({ actors, title, action }) {
   
   let displayedActors = actors;
 
@@ -14,7 +14,7 @@ function ActorListPageTemplate({ actors, title }) {
         <Header title={title} />
       </Grid>
       <Grid item container spacing={5}>
-        <ActorList actors={displayedActors}></ActorList>
+        <ActorList action={action} actors={displayedActors}></ActorList>
       </Grid>
     </Grid>
   );

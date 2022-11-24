@@ -38,8 +38,10 @@ export default function ActorCard(props) {
         <Typography variant="h5" component="p">
             {"Popularity: "} {actors.popularity}{" "}
           </Typography>
-      </CardContent>
-      
+          </CardContent>
+       <Link to={`/actors/${actors.id}`}>
+     More Info ...
+     </Link>      
     </Card>
   );
 }
