@@ -15,9 +15,6 @@ function ActorListPageTemplate({ actors, name }) {
         <Header name={name} />
       </Grid>
       <Grid item container spacing={5}>
-        <Grid key="find" item xs={12} sm={6} md={4} lg={3} xl={2}>
-          
-        </Grid>
         <ActorList actors={displayedActors}></ActorList>
       </Grid>
     </Grid>

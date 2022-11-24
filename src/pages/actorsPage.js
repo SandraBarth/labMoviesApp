@@ -7,7 +7,7 @@ import Spinner from '../components/spinner';
 
 const ActorsPage = (props) => {
 
-  const {  data, error, isLoading, isError }  = useQuery('person', getActors)
+  const {  data, error, isLoading, isError }  = useQuery('person', getActors);
 
   if (isLoading) {
     return <Spinner />

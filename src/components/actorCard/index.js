@@ -15,27 +15,29 @@ import img from '../../images/film-poster-placeholder.png'
 import { Link } from "react-router-dom";
 import Avatar from '@mui/material/Avatar';
 
-export default function MovieCard({person}) {
- 
+export default function ActorCard(props) {
+  const actors = props.actors;
    return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
-        name={
+        title={
           <Typography variant="h5" component="p">
-            {person.name}{" "}
+            {actors.name}{" "}
           </Typography>
         }
       />
       <CardMedia
         sx={{ height: 500 }}
         image={
-          person.poster_path
-            ? `https://image.tmdb.org/t/p/w500/${person.poster_path}`
+          actors.profile_path 
+          ? `https://image.tmdb.org/t/p/w500/${actors.profile_path}`
             : img
         }
       />
       <CardContent>
-        
+        <Typography variant="h5" component="p">
+            {""}{" "}
+          </Typography>
       </CardContent>
       
     </Card>

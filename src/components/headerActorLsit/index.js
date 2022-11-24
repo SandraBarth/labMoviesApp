@@ -6,8 +6,8 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router-dom";
 
-const Header = (props ) => {
-  const name = props.name;
+const ActorHeader = (props ) => {
+  const title = props.name;
   const navigate = useNavigate();
 
   return (
@@ -25,7 +25,7 @@ const Header = (props ) => {
       </IconButton>
 
       <Typography variant="h4" component="h3">
-        {name}
+        {title}
       </Typography>
       <IconButton aria-label="go forward" onClick={() => navigate(+1)}>
         <ArrowForwardIcon color="primary" fontSize="large" />
@@ -34,4 +34,4 @@ const Header = (props ) => {
   );
 };
 
-export default Header;
+export default ActorHeader;
