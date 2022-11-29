@@ -44,11 +44,10 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
         sx={root}
       >
         <li>
-          <Chip label="Birthday" sx={chip} color="primary" />
-        </li>
-        <p>
-        {actor.birthday}
-          </p>
+          <Chip label="Birthday" sx={chip} color="primary" /> 
+        </li> 
+        <li> {actor.birthday} </li>
+          
     
       </Paper>
       <Fab
