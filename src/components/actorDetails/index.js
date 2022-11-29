@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import Chip from "@mui/material/Chip";
 import Paper from "@mui/material/Paper";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import MonetizationIcon from "@mui/icons-material/MonetizationOn";
-import StarRate from "@mui/icons-material/StarRate";
 import NavigationIcon from "@mui/icons-material/Navigation";
 import Fab from "@mui/material/Fab";
 import Typography from "@mui/material/Typography";
@@ -30,7 +27,7 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
 
       <Typography variant="h6" component="p">
         Also known as: 
-        { actor.also_known_as[0]}, { actor.also_known_as[1]}
+        {" "} {actor.also_known_as[0]}
       </Typography>
 
       <Paper 
@@ -49,9 +46,9 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
         <li>
           <Chip label="Birthday" sx={chip} color="primary" />
         </li>
-        <li>
-          {actor.birthday}
-          </li>
+        <p>
+        {actor.birthday}
+          </p>
     
       </Paper>
       <Fab

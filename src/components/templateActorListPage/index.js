@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../headerActorLsit";
 import ActorList from "../actorList";
 import Grid from "@mui/material/Grid";
