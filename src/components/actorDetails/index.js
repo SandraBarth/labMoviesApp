@@ -29,7 +29,8 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
       </Typography>
 
       <Typography variant="h6" component="p">
-        {}
+        Also known as: 
+        { actor.also_known_as[0]}, { actor.also_known_as[1]}
       </Typography>
 
       <Paper 
@@ -40,14 +41,6 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
           <Chip label="Biography" sx={chip} color="primary" />
         </li>
         <li>{actor.biography} </li>
-      </Paper>
-      <Paper component="ul" sx={root}>
-        <Chip
-          icon={<MonetizationIcon />}
-        />
-        <Chip
-          icon={<StarRate />}
-        />
       </Paper>
       <Paper 
         component="ul" 

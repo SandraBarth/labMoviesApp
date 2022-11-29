@@ -28,6 +28,8 @@ const SiteHeader = ({ history }) => {
     { label: "Upcoming", path: "/movies/upcoming" },
     { label: "Favourites", path: "/movies/favourites" },
     { label: "Actors", path: "/actors" },
+    { label: "Tv Shows", path: "/series" },
+
   ];
 
   const handleMenuSelect = (pageURL) => {
