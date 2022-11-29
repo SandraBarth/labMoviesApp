@@ -59,7 +59,7 @@ export const getActor = (args) => {
 
   export const getSeries = () => {
     return fetch(
-      `https://api.themoviedb.org/3/tv/popular?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
+      `https://api.themoviedb.org/3/tv/popular?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US`
     ).then((response) => {
       if (!response.ok) {
         throw new Error(response.json().message);
