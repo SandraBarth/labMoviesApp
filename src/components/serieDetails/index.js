@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 import Chip from "@mui/material/Chip";
 import Paper from "@mui/material/Paper";
 import StarRate from "@mui/icons-material/StarRate";
@@ -16,7 +16,6 @@ const root = {
 const chip = { margin: 0.5 };
 
 const SerieDetails = ({ serie }) => {  // Don't miss this!
-  const [ setDrawerOpen] = useState(false);
 
   return (
     <>

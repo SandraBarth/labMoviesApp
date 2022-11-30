@@ -1,5 +1,4 @@
 import React  from "react";
-import headerActorLsit from "../headerActorLsit";
 import Grid from "@mui/material/Grid";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
