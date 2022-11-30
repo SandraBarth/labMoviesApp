@@ -1,17 +1,16 @@
 import React  from "react";
-import headerActorLsit from "../headerActorLsit";
+import SerieHeader from "../headerSerie";
 import Grid from "@mui/material/Grid";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import { getActorImages } from "../../api/tmdb-api";
+import { getSerieImages } from "../../api/tmdb-api";
 import { useQuery } from "react-query";
 import Spinner from '../spinner';
-import ActorHeader from "../headerActorLsit";
 
-const TemplateActorPage = ({ actor, children }) => {
+const TemplateSeriePage = ({ serie, children }) => {
   const { data , error, isLoading, isError } = useQuery(
-    ["images", { id: actor.id }],
-    getActorImages
+    ["images", { id: serie.id }],
+    getSerieImages
   );
 
   if (isLoading) {
@@ -21,11 +20,11 @@ const TemplateActorPage = ({ actor, children }) => {
   if (isError) {
     return <h1>{error.message}</h1>;
   }
-  const images = data.profiles;
+  const images = data.posters 
 
   return (
     <>
-      <ActorHeader actor={actor} />
+      <SerieHeader serie={serie} />
 
       <Grid container spacing={5} sx={{ padding: "15px" }}>
         <Grid item xs={3}>
@@ -34,8 +33,7 @@ const TemplateActorPage = ({ actor, children }) => {
             flexWrap: "wrap",
             justifyContent: "space-around",
           }}>
-           
-           <ImageList 
+            <ImageList 
                 cols={1}>
                 {images.map((image) => (
                     <ImageListItem key={image.file_path} cols={1}>
@@ -57,4 +55,4 @@ const TemplateActorPage = ({ actor, children }) => {
   );
 };
 
-export default TemplateActorPage;
+export default TemplateSeriePage;

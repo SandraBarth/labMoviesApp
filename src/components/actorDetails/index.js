@@ -4,7 +4,6 @@ import Paper from "@mui/material/Paper";
 import NavigationIcon from "@mui/icons-material/Navigation";
 import Fab from "@mui/material/Fab";
 import Typography from "@mui/material/Typography";
-import Drawer from "@mui/material/Drawer";
 
 const root = {
     display: "flex",
@@ -16,8 +15,7 @@ const root = {
 };
 const chip = { margin: 0.5 };
 
-const ActorDetails = ({ actor }) => {  // Don't miss this!
-  const [drawerOpen, setDrawerOpen] = useState(false);
+const ActorDetails = ({ actor }) => {  
 
   return (
     <>
@@ -50,21 +48,7 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
           
     
       </Paper>
-      <Fab
-        color="secondary"
-        variant="extended"
-        onClick={() =>setDrawerOpen(true)}
-        sx={{
-          position: 'fixed',
-          bottom: '1em',
-          right: '1em'
-        }}
-      >
-        <NavigationIcon />
-        Reviews
-      </Fab>
-      <Drawer anchor="top" open={drawerOpen} onClose={() => setDrawerOpen(false)}>
-      </Drawer>
+       
     </>
   );
 };
