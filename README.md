@@ -34,23 +34,23 @@ Did not integrate Storybook.
 ### UI Design.
 
 
-![ ](./images/tv_show_details.png)
+![ ](images/tv_show_details.png)
 
 >Shows detailed information on a tv show. 
 
-![ ](./images/tv_shows.png)
+![ ](images/tv_shows.png)
 
 >Shows list of tv shows. 
 
-![ ](./images/now_playing.png)
+![ ](images/now_playing.png)
 
 >Shows list of now playing movies.
  
-![ ](./images/actors.png)
+![ ](images/actors.png)
 
 >Shows list of popular actors.
 
-![ ](./images/actor_bio.png)
+![ ](images/actor_bio.png)
 
 >Shows detailed information of an actor. 
 
