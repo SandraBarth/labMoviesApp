@@ -38,19 +38,19 @@ Did not integrate Storybook.
 
 >Shows detailed information on a tv show. 
 
-![tv shows](images/tv_shows.png)
+![tv shows](images/tv_shows.PNG)
 
 >Shows list of tv shows. 
 
-![now playing movies](images/now_playing.png)
+![now playing movies](images/now_playing.PNG)
 
 >Shows list of now playing movies.
  
-![popular actors](images/actors.png)
+![popular actors](images/actors.PNG)
 
 >Shows list of popular actors.
 
-![actor details](images/actor_bio.png)
+![actor details](images/actor_bio.PNG)
 
 >Shows detailed information of an actor. 
 
