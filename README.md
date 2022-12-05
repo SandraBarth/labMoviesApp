@@ -18,7 +18,6 @@ Name: Sandra Barth
 
 ## TMDB endpoints.
 
-+ /movies/{movie_id}/reviews - The user reviews or a movie.
 + /person/popular - A list of popular actors.
 + /person/{person_id} - Information about a popular actor.
 + /person/{actor_id}/images - Images for an actor.
