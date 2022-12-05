@@ -34,7 +34,7 @@ Did not integrate Storybook.
 ### UI Design.
 
 
-![ ](images/tv_show_details.png)
+![ ] (tv_show_details.PNG)
 
 >Shows detailed information on a tv show. 
 
